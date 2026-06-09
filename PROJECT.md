@@ -4,7 +4,7 @@ Lightweight project management — track work items, phases, and delivery using 
 
 ## Status
 
-Greenfield. Process and automation scaffolding are in place; application code starts with the first Feature.
+**App skeleton** (issue #1) in Build — Next.js 16 Kanban board with PostgreSQL persistence. See `feature/app-skeleton/tech-spec.md`.
 
 ## Repository map
 

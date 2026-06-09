@@ -15,7 +15,23 @@ Lightweight project management, built with the [AI-DLC](https://github.com/queen
 git clone https://github.com/queen-of-code/task-manager.git
 cd task-manager
 git submodule update --init --recursive
+cp .env.example .env
+npm install
+npm run db:up
+npx prisma migrate dev
+npm run dev
+# open http://127.0.0.1:3000
 ```
+
+**Requirements:** Node.js 22+, Docker (for PostgreSQL 16).
+
+| Command | Purpose |
+|---------|---------|
+| `npm run db:up` | Start PostgreSQL via Docker Compose |
+| `npx prisma migrate dev` | Apply database migrations |
+| `npm run dev` | Next.js dev server at `http://127.0.0.1:3000` |
+| `npm test` | Unit + API integration tests (needs DB) |
+| `npm run build` | Production build |
 
 ## Starting a Feature
 
