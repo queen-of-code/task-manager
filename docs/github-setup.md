@@ -6,7 +6,8 @@ One-time configuration for **GitHub Issues + Projects v2** with **minimal** head
 
 | Item | Value |
 |------|--------|
-| **Projects v2 board** | [AIDLC — task-manager](https://github.com/users/queen-of-code/projects/7) (project **#7**) |
+| **Projects v2 board** | [AIDLC — task-manager](https://github.com/users/queen-of-code/projects/8) (project **#8**) |
+| **Board view** | **AI Workflow** — columns grouped by **AIDLC phase** ([view 1](https://github.com/users/queen-of-code/projects/8/views/1)) |
 | **AIDLC phase field** | `Idea`, `Plan`, `Design`, `Build`, `Review`, `Ship`, `Done`, `Won't do` |
 | **Repo link** | Linked to `queen-of-code/task-manager` |
 | **Labels** | `aidlc_work:unstarted`, `aidlc_work:in_progress` |

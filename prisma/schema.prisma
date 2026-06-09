@@ -1,0 +1,33 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum AidlcPhase {
+  IDEA
+  PLAN
+  DESIGN
+  BUILD
+  REVIEW
+  SHIP
+  DONE
+  WONT_DO
+}
+
+model Card {
+  id        String     @id @default(cuid())
+  title     String
+  body      String?
+  phase     AidlcPhase
+  position  Int
+  assignee  String?
+  labels    Json       @default("[]")
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+
+  @@index([phase, position])
+}

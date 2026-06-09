@@ -34,7 +34,7 @@ Invoke in Cursor chat (skills from global AI-DLC install or `.claude/skills` sym
 
 | Layer | Choice |
 |-------|--------|
-| **App** | Full-stack web — frontend + backend API (details in first Feature Tech Spec) |
+| **App** | Full-stack web — **Next.js 16** + API (see `feature/app-skeleton/tech-spec.md`) |
 | **Specs** | `feature/<slug>/product-spec.md`, `feature/<slug>/tech-spec.md` |
 | **ADRs** | `adr/NNNN-slug.md` — see [adr/README.md](adr/README.md) |
 | **AI-DLC library** | Git submodule at `.claude/deps/ai-dlc` (pin a release tag for production) |
